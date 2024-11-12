@@ -1,0 +1,212 @@
+/* Медиа для шапки сайта (телефон)*/
+@media (max-width: 480px) {
+    header {
+        height: 75px;
+        padding: 0 10px 0 0;
+    }
+    .burger-menu {
+        padding-left: 10px;
+    }
+    .logoImage {
+        width: 39px;
+        top: 10px;
+        left: 220px;
+    }
+}
+
+/* Медиа для секции под шапкой (телефон)*/
+@media (max-width: 480px) {
+    .tea-field {
+        width: 480px;
+    }
+    #title-tea-field {
+        width: 450px;
+        left: 10px;
+        bottom: 125px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    #par-in-tea-field {
+        width: 450px;
+        left: 10px;
+    }
+}
+
+/* Медиа для секции с коллекцией чая (телефон) */
+@media (max-width: 480px) {
+    #par-in-tea-collections { /* Цитата вверху секции */
+        width: 376px;
+        font-family: "Open sans", serif;
+        font-size: 16px;
+        margin-top: 60px;
+    }
+    #title-explore { /* Заголовок под цитатой */
+        margin: 60px 0 0 5px;
+    }
+    .type-of-tea { /* Контейнер с видами чая */
+        width: 416px;
+        margin-top: 35px;
+        margin-bottom: 65px;
+    }
+}
+
+/* Медиа для секции What our Clients say (телефон) */
+@media (max-width: 480px) {
+    .clients-feadback { /* Весь контейнер */
+        height: 588px;
+        padding: 50px 0 0 0;
+        row-gap: 45px;
+    }
+    .all-comments {
+        width: 480px;
+        padding: 5px 10px 0 10px;
+    }
+    .each-comment {
+        width: 220px;
+    }
+}
+
+/* Медиа для секции чайного блога (телефон)*/
+@media (max-width: 480px) {
+    #title-blog {
+        padding: 60px 5px 0 0;
+    }
+    .each-blog {
+        width: 460px;
+        margin-left: 10px;
+    }
+    .each-blog:nth-child(2),
+    .each-blog:nth-child(4) {
+        margin-left: 10px;
+    }
+    .image-blog {
+        width: 230px;
+    }
+    .blog-button {
+        padding: 10px 40px;
+        margin: 60px 0 0 165px;
+    }
+}
+
+/* Медиа для секции Want to know more? (телефон)*/
+@media (max-width: 480px) {
+    .more-info { /* Весь контейнер */
+        height: 415px;
+        margin-top: 55px;
+        background-image: none;
+    }
+    .left-box {
+        padding-top: 40px;
+    }
+    #par-in-left-box { /* Текст в левой части секции */
+        width: 460px;
+        font-size: 13px;
+        padding-top: 25px;
+    }
+    .right-box { /* Правая часть секции */
+        width: 460px;
+        margin-bottom: 100px;
+    }
+    #email { /* Поле ввода почты */
+        width: 324px;
+    }
+    #label-in-email { /* placeholder в поле ввода почты */
+        left: 15px;
+    }
+    #input-button { /* Кнопка Join */
+        padding: 15px 40px;
+        margin: 20px 0 0 5px;
+        font-size: 20px;
+    }
+    
+}
+
+/* Медиа для секции с приоритетами (телефон) */
+@media (max-width: 480px) {
+    .priority {
+        height: 926px;
+        margin: 0px 0 120px 0;
+    }
+    #title-priority {
+        padding: 60px 0 35px 0;
+    }
+    .four-priority {
+        width: 300px;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+/* Медиа для футера (телефон)*/
+@media (max-width: 480px) {
+    footer {
+        height: 853px;
+        grid-template-columns: 20% 35% 45%;
+        grid-template-rows: 10% 40% 17.5% 10% 17.5% 5%;
+    }
+    .title-in-footer {
+        grid-column: 1 / span 3;
+        padding: 50px 150px 0 10px;
+    }
+    .footer-ul {
+        padding: 25px 0 0 10px;
+    }
+    .products {
+        grid-column: 1;
+        grid-row: 2;
+        padding-left: 0px;
+    }
+    .company {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 2;
+        padding-left: 135px;
+    }
+    .quote-author {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+        margin: 0px 0px 30px 10px;
+        width: 460px;
+    }
+    .quote-author p:last-child {
+        width: 298px;
+    }
+    .title-in-footer h5:nth-of-type(3) {
+        bottom: 245px;
+        right: 175px;
+    }
+    #par-in-footer {
+        grid-column: 1 / span 3;
+        grid-row: 4;
+    
+        width: 460px;
+        margin: 50px 0 0 10px;
+        text-align: center;
+    }
+    #footer-logo {
+        right: 390px;
+        bottom: 75px;
+    }
+    .number-mail {
+        grid-column: 2;
+        grid-row: 5;
+        height: 60px;
+        margin: 35px 0 0px 20px;
+    }
+    .social-icons {
+        grid-column: 3;
+        grid-row: 5;
+        width: 150px;
+        height: 22px;
+        margin: 50px 0 0px 15px;
+    }
+    #copyright {
+        grid-column: 1 / span 2;
+        grid-row: 6;
+        padding: 15px 0 0 10px;
+    }
+    .pay-icon {
+        grid-column: 3;
+        grid-row: 6;
+        margin: 5px 0px 0 20px;
+    }
+}
