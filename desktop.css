@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap');
+
+/* Шапка сайта */
+header {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 155px 0 150px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 45px;
+    font-style: normal;
+    font-size: 13.5px;
+}
+.menu {
+    display: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.logoImage {
+    height: 78.75px;
+}
+nav {
+    text-align: center;
+    padding-left: 55px;
+}
+.header-ul {
+    display: flex;
+    justify-content: center;
+    gap: 53.5px;
+}
+.header-icon {
+    display: flex;
+    gap: 15px;
+}
+.header-icon img {
+    width: auto;
+    height: 16.5px;
+}
+#searchIcon {
+    padding-left: 60px;
+}
+
+
+/* Секция под шапкой */
+.tea-field {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.tea-field-img { /* Изображение на фоне */
+    width: 100%;
+    height: auto;
+}
+.tea-field:after { /* Фильтр для изображения на фоне */
+    content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to top, #000000 15%, #ffffff00, #ffffff00);
+	opacity: 0.8;
+}
+#title-tea-field, #par-in-tea-field { /*  */
+    position: absolute;
+    z-index: 1;
+    width: 592px;
+    left: 150px;
+    bottom: 95px;
+}
+#par-in-tea-field { /* Переопределение некоторых настроек для текста под заголовком */
+    width: 418px;
+    bottom: 35px;
+    color: white;
+
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22.5px;
+}
+
+
+/* Секция с коллекцией чая */
+.tea-collections {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#par-in-tea-collections { /* Цитата вверху секции */
+    margin-top: 112px;
+    width: 528px;
+    text-align: center;
+
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30px;
+}
+#title-explore { /* Заголовок под цитатой */
+    width: 300px;
+    margin: 110px 0 0 30px;
+}
+.type-of-tea { /* Контейнер с видами чая */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 900px;
+    margin-top: 47px;
+
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.img-type-of-tea { /* Изображения видов чая */
+    width: 156px;
+}
+
+
+/* Секция What our Clients say */
+.clients-feadback { /* Весь контейнер */
+    height: 297.75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 113px;
+    background-color: #f7f2ea;
+}
+#title-what {
+    padding-left: 7px;
+}
+.all-comments { /* Контейнер с комментариями */
+    width: 900px;
+    height: 126.75px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2px 1px 0;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+}
+.each-comment { /* Каждый комментарий */
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 16.5px;
+}
+#author { /* Автор каждого комментария */
+    letter-spacing: -0.2px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+}
+
+
+/* Секция чайного блога */
+#title-blog {
+    padding: 112px 40px 0 0;
+    text-align: center;
+}
+.all-blog { /* Контейнер с блогами (уменьшен внутри всего контейнера) */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 42px;
+    padding: 45px 195px 0 150px;
+}
+.each-blog { /* Настройки каждого блога */
+    display: flex;
+    width: 406.5px;
+}
+.image-blog { /* Изображение блога */
+    width: 202.5px;
+}
+.description { /* Весь текст справа от изображения блога */
+    width: 189px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15.5px;
+    position: relative;
+}
+.description p{ /* Указание автора блога */
+    position: absolute;
+    top: 72px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 9.75px;
+}
+.link { /* Ссылка-переход на блог (read) */
+    text-decoration: none;
+    color: #000000;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 9.75px;
+}
+.link::after {
+    display: inline-block;
+    content: '';
+    width: 3px;
+    height: 8px;
+    background: url(/images/read.svg) 100% / cover no-repeat;
+    margin-left: 6px;
+    transition: all 0.2s ease-in 0s;
+}
+.blog-button { /* Кнопка в конце секции */
+    width: 111.75px;
+    height: 38.25px;
+    display: flex;
+    flex: 1;
+    border: 1px solid #151618;
+    background-color: white;
+    padding: 10px 29px;
+    margin: 44px 0 0 42.8%;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 15px;
+}
+
+
+/* Секция Want to know more? */
+.more-info { /* Весь контейнер */
+    height: 313.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 113px;
+    padding: 0 125px;
+    background-color: #F7F2EA;
+    background-image: url(/images/tea\ 1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.left-box { /* Левая часть секции */
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8px;
+}
+#par-in-left-box { /* Текст в левой части секции */
+    width: 435px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.right-box { /* Правая часть секции */
+    width: 435px;
+    height: 87.75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    position: relative;
+}
+#email { /* Поле ввода почты */
+    width: 329.25px;
+    height: 22.5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 50px;
+    margin-right: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 1px solid #B8B58B;
+    transform: translateX(-5.5px);
+}
+#par-in-right-box { /* Текст справа от чекбокса */
+    width: 425px;
+    padding-left: 8px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 9.75px;
+}
+#label-in-email { /* placeholder в поле ввода почты */
+    position: absolute;
+    top: 50px;
+    right: 310px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 15px;
+    color: #B8B58B;
+}
+#input-button { /* Кнопка Join */
+    width: 87px;
+    height: 38.25px;
+    display: flex;
+    padding: 8px 30px;
+    margin: 35px 0 10px 0px;
+    border: 1px solid #151618;
+    background-color: white;
+    
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 15px;
+}
+#checkbox { /* Чекбокс */
+    width: 7.5px;
+    height: 7.5px;
+    position: absolute;
+    top: 86px;
+    right: 435px;
+}
+
+
+/* Секция с приоритетами */
+.priority { /* Весь контейнер */
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#title-priority {
+    padding-top: 110px;
+}
+.four-priority { /* Контейнер для всех приоритетов */
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 131px 113px 131px;
+}
+.each-priority { /* Каждый приоритет */
+    height: 133.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-priority { /* Иконка приоритета */
+    width: 45px;
+    height: auto;
+    padding-top: 20px;
+}
+#par-in-priority { /* Текст под заголовком */
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+}
+
+
+/* Футер */
+footer {
+    height: 445px;
+    display: grid;
+    grid-template-columns: 25% 25% 20% 5% 25%;
+    grid-template-rows: 25% 15% 15% 35% 10%;
+    position: relative;
+    background-color: #F7F2EA;
+}
+.title-in-footer {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-evenly;
+    padding: 0 20px 15px 0px;
+}
+.title-in-footer h5 {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+}
+.title-in-footer h5:nth-of-type(1) {
+    transform: translateX(-90px);
+}
+.title-in-footer h5:nth-of-type(2) {
+    transform: translateX(-155px);
+}
+.footer-ul {    
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 25px 0 0 80px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 12px;
+}
+.products {
+    grid-column: 1;
+    grid-row: 2 / span 3;
+    padding-left: 70px;
+}
+.company {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+}
+#copyright {
+    grid-column: 1;
+    grid-row: 5;
+    padding: 15px 0 0 150px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 12px;
+}
+.pay-icon {
+    grid-column: 2;
+    grid-row: 5;
+    width: 117px;
+    margin-left: 82px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pay-icon img:nth-of-type(1) {
+    width: 19.5px;
+    height: auto;
+}
+.pay-icon img:nth-of-type(2) {
+    width: 23.35px;
+    height: auto;
+}
+.pay-icon img:nth-of-type(3) {
+    width: 21.75px;
+    height: auto;
+}
+.pay-icon img:nth-of-type(4) {
+    width: 7.5px;
+    height: auto;
+}
+.quote-author {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+    margin: 25px auto;
+
+    width: 201.75px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.quote-author p:last-child {
+    width: 96.75px;
+    padding-top: 12px;
+    font-style: normal;
+    font-size: 9px;
+}
+#par-in-footer {
+    grid-column: 4 / span 2;
+    grid-row: 2;
+
+    width: 230px;
+    padding: 25px 0 0 7px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 9.75px;
+}
+#footer-logo {
+    grid-column: 4;
+    grid-row: 3;
+    width: 42.75px;
+    margin-left: 7px;
+}
+.number-mail {
+    grid-column: 5;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0 0 20px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 9.75px;
+}
+.number-mail img {
+    width: 16.5px;
+    margin-right: 7px;
+}
+.social-icons {
+    grid-column: 5;
+    grid-row: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 115px;
+    margin: 30px 0 0 20px;
+}
+.social-icons img {
+    width: 16.5px;
+}
+.social-icons img:nth-of-type(2) {
+    width: 18px;
+}
