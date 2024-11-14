@@ -17,18 +17,15 @@
 /* Медиа для секции под шапкой (телефон)*/
 @media (max-width: 480px) {
     .tea-field {
-        width: 480px;
+        padding: 275px 0 45px 10px;
     }
     #title-tea-field {
         width: 450px;
-        left: 10px;
-        bottom: 125px;
         font-size: 40px;
         line-height: 50px;
     }
     #par-in-tea-field {
         width: 450px;
-        left: 10px;
     }
 }
 

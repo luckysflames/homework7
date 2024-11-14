@@ -50,13 +50,12 @@ nav {
 
 /* Секция под шапкой */
 .tea-field {
-    display: flex;
-    align-items: flex-end;
     position: relative;
-}
-.tea-field-img { /* Изображение на фоне */
-    width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/Rectangle\ 75.png);
+    padding: 190px 0 35px 150px;
+    gap: 15px;
 }
 .tea-field:after { /* Фильтр для изображения на фоне */
     content: "";
@@ -70,16 +69,12 @@ nav {
 	background-image: linear-gradient(to top, #000000 15%, #ffffff00, #ffffff00);
 	opacity: 0.8;
 }
-#title-tea-field, #par-in-tea-field { /*  */
-    position: absolute;
-    z-index: 1;
+ #title-tea-field, #par-in-tea-field {
     width: 592px;
-    left: 150px;
-    bottom: 95px;
+    z-index: 1;
 }
-#par-in-tea-field { /* Переопределение некоторых настроек для текста под заголовком */
+#par-in-tea-field {
     width: 418px;
-    bottom: 35px;
     color: white;
 
     font-family: "Cormorant", serif;

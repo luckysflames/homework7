@@ -145,28 +145,17 @@
 /* Медиа для секции под шапкой */
 @media (max-width: 768px) {
     .tea-field {
-        width: 768px;
-        justify-content: flex-end;
-    }
-    .tea-field-img { /* Изображение на фоне */
-        width: 768px;
-        height: 500px;
-        object-fit: cover;
-        object-position: left;
+        padding: 255px 0 45px 20px;
+        gap: 20px;
     }
     #title-tea-field {
         width: 684px;
-        left: 20px;
-        bottom: 130px;
         font-size: 60px;
-        line-height: 57px;
+        line-height: 60px;
     }
     #par-in-tea-field {
         width: 557.65px;
-        left: 20px;
-        bottom: 50px;
-    
-        line-height: 27px;
+        line-height: 30px;
         font-size: 24px;
     }
 }
