@@ -168,17 +168,20 @@ nav {
 
 
 /* Секция чайного блога */
-#title-blog {
-    padding: 112px 40px 0 0;
-    text-align: center;
+.tea-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+    gap: 45px;
 }
-.all-blog { /* Контейнер с блогами (уменьшен внутри всего контейнера) */
+.all-blog { /* Контейнер с блогами */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 42px;
-    padding: 45px 195px 0 150px;
+    padding-left: 150px;
 }
 .each-blog { /* Настройки каждого блога */
     display: flex;
@@ -225,14 +228,11 @@ nav {
     transition: all 0.2s ease-in 0s;
 }
 .blog-button { /* Кнопка в конце секции */
-    width: 111.75px;
-    height: 38.25px;
     display: flex;
     flex: 1;
     border: 1px solid #151618;
     background-color: white;
-    padding: 10px 29px;
-    margin: 44px 0 0 42.8%;
+    padding: 9px 30px;
 
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;

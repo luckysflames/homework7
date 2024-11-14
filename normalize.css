@@ -11,7 +11,7 @@ header,
 .more-info,
 .priority,
 footer {
-    width: 100%;
+    max-width: 1200px;
 }
 ul {
     list-style: none;

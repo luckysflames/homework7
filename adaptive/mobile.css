@@ -1,3 +1,17 @@
+/* Ограничение всех блоков по ширине */
+@media (max-width: 480px) {
+    header,
+    .tea-field,
+    .tea-collections,
+    .clients-feadback,
+    .tea-blog,
+    .more-info,
+    .priority,
+    footer {
+        width: 480px;
+    }
+}
+
 /* Медиа для шапки сайта (телефон)*/
 @media (max-width: 480px) {
     header {
@@ -65,8 +79,8 @@
 
 /* Медиа для секции чайного блога (телефон)*/
 @media (max-width: 480px) {
-    #title-blog {
-        padding: 60px 5px 0 0;
+    .tea-blog {
+        padding-top: 60px;
     }
     .each-blog {
         width: 460px;
@@ -78,10 +92,6 @@
     }
     .image-blog {
         width: 230px;
-    }
-    .blog-button {
-        padding: 10px 40px;
-        margin: 60px 0 0 165px;
     }
 }
 
