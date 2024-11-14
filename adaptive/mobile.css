@@ -8,7 +8,7 @@
     .more-info,
     .priority,
     footer {
-        width: 480px;
+        max-width: 480px;
     }
 }
 
@@ -147,73 +147,63 @@
 /* Медиа для футера (телефон)*/
 @media (max-width: 480px) {
     footer {
-        height: 853px;
-        grid-template-columns: 20% 35% 45%;
-        grid-template-rows: 10% 40% 17.5% 10% 17.5% 5%;
-    }
-    .title-in-footer {
-        grid-column: 1 / span 3;
-        padding: 50px 150px 0 10px;
+        grid-template-columns: 230px 230px;
+        grid-template-rows: 43vh 16vh 11vh 16vh 4vh;
+        padding-top: 55px;
     }
     .footer-ul {
-        padding: 25px 0 0 10px;
+        padding-top: 30px;
     }
     .products {
-        grid-column: 1;
-        grid-row: 2;
-        padding-left: 0px;
+        grid-row: 1;
+        padding-bottom: 0;
     }
     .company {
-        grid-column: 2 / span 2;
-        grid-row: 2 / span 2;
-        padding-left: 135px;
+        grid-row: 1;
+        padding-left: 0;
     }
     .quote-author {
-        grid-column: 1 / span 3;
-        grid-row: 3;
-        margin: 0px 0px 30px 10px;
+        grid-column: 1 / span 2;
+        grid-row: 2;
         width: 460px;
+        margin: 0;
     }
     .quote-author p:last-child {
         width: 298px;
+        padding-top: 10px;
     }
-    .title-in-footer h5:nth-of-type(3) {
-        bottom: 245px;
-        right: 175px;
+    #stay-in-touch {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        padding: 0px 0 0px 165px;
     }
     #par-in-footer {
-        grid-column: 1 / span 3;
-        grid-row: 4;
-    
+        grid-column: 1 / span 2;
         width: 460px;
-        margin: 50px 0 0 10px;
+        margin: 0;
+        padding-top: 45px;
         text-align: center;
     }
     #footer-logo {
-        right: 390px;
-        bottom: 75px;
+        grid-column: 1;
+        margin: 5px 0 0 20px;
     }
     .number-mail {
-        grid-column: 2;
-        grid-row: 5;
-        height: 60px;
-        margin: 35px 0 0px 20px;
+        grid-column: 1 / span 2;
+        margin: 20px 0 0 105px;
+        width: 150px;
     }
     .social-icons {
-        grid-column: 3;
-        grid-row: 5;
-        width: 150px;
-        height: 22px;
-        margin: 50px 0 0px 15px;
+        grid-column: 2;
+        margin: 35px 0 0 40px;
     }
     #copyright {
-        grid-column: 1 / span 2;
-        grid-row: 6;
-        padding: 15px 0 0 10px;
+        grid-column: 1;
+        grid-row: 5;
     }
     .pay-icon {
-        grid-column: 3;
-        grid-row: 6;
-        margin: 5px 0px 0 20px;
+        grid-column: 2;
+        grid-row: 5;
+        margin-left: 40px;
     }
 }

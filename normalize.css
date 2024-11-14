@@ -11,7 +11,7 @@ header,
 .more-info,
 .priority,
 footer {
-    max-width: 1200px;
+    max-width: 100%;
 }
 ul {
     list-style: none;
@@ -45,4 +45,11 @@ h4 {
     font-weight: lighter;
     font-style: normal;
     font-size: 22.5px;
+}
+h5 {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
 }

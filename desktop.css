@@ -53,9 +53,10 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-image: url(/images/Rectangle\ 75.png);
+    background: url(/images/Rectangle\ 75.png) no-repeat center left / cover;
     padding: 190px 0 35px 150px;
     gap: 15px;
+
 }
 .tea-field:after { /* Фильтр для изображения на фоне */
     content: "";
@@ -176,12 +177,12 @@ nav {
     gap: 45px;
 }
 .all-blog { /* Контейнер с блогами */
+    max-width: 860px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 42px;
-    padding-left: 150px;
 }
 .each-blog { /* Настройки каждого блога */
     display: flex;
@@ -384,72 +385,53 @@ nav {
 
 /* Футер */
 footer {
-    height: 445px;
     display: grid;
-    grid-template-columns: 25% 25% 20% 5% 25%;
-    grid-template-rows: 25% 15% 15% 35% 10%;
+    grid-template-columns: 225px 225px 243px 54px 153px; /* футер, не считая отступов - 900px */
+    grid-template-rows: 25% 20% 15% 35% 5%;
     position: relative;
     background-color: #F7F2EA;
+    padding: 75px 0 15px 0;
+    justify-content: center;
 }
-.title-in-footer {
-    grid-column: 1 / span 5;
-    grid-row: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-evenly;
-    padding: 0 20px 15px 0px;
-}
-.title-in-footer h5 {
-    font-family: "Cormorant", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 18px;
-}
-.title-in-footer h5:nth-of-type(1) {
-    transform: translateX(-90px);
-}
-.title-in-footer h5:nth-of-type(2) {
-    transform: translateX(-155px);
-}
-.footer-ul {    
+.footer-ul { /* Два списка слева */
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    padding: 25px 0 0 80px;
-
+    padding-top: 35px;
+    
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: lighter;
     font-style: normal;
     font-size: 12px;
 }
-.products {
+.products { /* Первый список */
     grid-column: 1;
-    grid-row: 2 / span 3;
-    padding-left: 70px;
+    grid-row: 1 / span 4;
+    padding-bottom: 130px;
 }
-.company {
+.company { /* Второй список */
     grid-column: 2;
-    grid-row: 2 / span 3;
+    grid-row: 1 / span 4;
+    padding-left: 7px;
 }
-#copyright {
+#copyright { /* Значок копирайта */
     grid-column: 1;
     grid-row: 5;
-    padding: 15px 0 0 150px;
-
+    
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: lighter;
     font-style: normal;
     font-size: 12px;
 }
-.pay-icon {
+.pay-icon { /* Значки платёжных систем */
     grid-column: 2;
     grid-row: 5;
     width: 117px;
-    margin-left: 82px;
+    height: 22px;
+    
+    margin-left: 7px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -470,11 +452,11 @@ footer {
     width: 7.5px;
     height: auto;
 }
-.quote-author {
+.quote-author { /* Цитата + автор */
     grid-column: 3;
-    grid-row: 2 / span 2;
-    margin: 25px auto;
-
+    grid-row: 1 / span 3;
+    padding: 60px 0 0 15px;
+    
     width: 201.75px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -483,18 +465,22 @@ footer {
     font-size: 12px;
     line-height: 1.4;
 }
-.quote-author p:last-child {
+.quote-author p:last-child { /* Автор цитаты */
     width: 96.75px;
-    padding-top: 12px;
+    padding-top: 10px;
     font-style: normal;
     font-size: 9px;
 }
-#par-in-footer {
+#stay-in-touch { /* Третий заголовок */
     grid-column: 4 / span 2;
-    grid-row: 2;
-
+    grid-row: 1;
+    padding-left: 5px;
+}
+#par-in-footer { /* Параграф под заголовком */
+    grid-column: 4 / span 2;
+    grid-row: 1;
     width: 230px;
-    padding: 25px 0 0 7px;
+    padding: 60px 0 0 5px;
 
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -502,19 +488,19 @@ footer {
     font-style: normal;
     font-size: 9.75px;
 }
-#footer-logo {
+#footer-logo { /* Логотип */
     grid-column: 4;
-    grid-row: 3;
+    grid-row: 2;
     width: 42.75px;
-    margin-left: 7px;
+    margin: 10px 0 0 5px;
 }
-.number-mail {
+.number-mail { /* Контейнер номера и телефона (в макете значки перепутаны) */
     grid-column: 5;
-    grid-row: 3;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0 0 0 20px;
+    padding: 25px 0 0 25px;
+    gap: 15px;
 
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -522,23 +508,24 @@ footer {
     font-style: normal;
     font-size: 9.75px;
 }
-.number-mail img {
+.number-mail img { /* Иконки номера и телефона */
     width: 16.5px;
+    height: auto;
     margin-right: 7px;
 }
-.social-icons {
+.social-icons { /* Контейнер с соц.сетями */
     grid-column: 5;
-    grid-row: 4;
+    grid-row: 3;
+    width: 115px;
+    height: 22px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 115px;
-    margin: 30px 0 0 20px;
+    margin: 35px 0 0 25px;
 }
-.social-icons img {
+.social-icons img { /* Иконки соц.сетей */
     width: 16.5px;
 }
-.social-icons img:nth-of-type(2) {
+.social-icons img:nth-of-type(2) { /* Значок ютуба чуть больше */
     width: 18px;
 }
