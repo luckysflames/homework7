@@ -15,21 +15,14 @@
 /* Медиа для шапки сайта */
 @media (max-width: 768px) {
     header {
-        height: 165px;
-        padding: 0 65px 5px 55px;
-        position: relative;
+        padding: 30px 65px 31px 55px;
     }
-    .burger-menu {
-        display: flex;
-        width: 40px;
-        padding: 0 0 0 65px;
+    .logo {
+        padding-bottom: 0px;
     }
-    .logoImage {
+    .logo img {
         width: 73px;
-        height: auto;
-        position: absolute;
-        top: 30px;
-        left: 347px;
+        margin-left: 100px;
     }
     nav {
         display: none;
@@ -159,11 +152,13 @@
 /* Медиа для секции под шапкой */
 @media (max-width: 768px) {
     .tea-field {
-        padding: 255px 0 45px 20px;
-        gap: 20px;
+        padding: 255px 40px 45px 0;
+    }
+    .text-field {
+        width: 684px;
+        row-gap: 20px;
     }
     #title-tea-field {
-        width: 684px;
         font-size: 60px;
         line-height: 60px;
     }
@@ -182,8 +177,9 @@
         font-size: 40px;
     }
     #par-in-tea-collections { /* Цитата вверху секции */
+        padding: 0 60px;
         margin-top: 120px;
-        width: 640px;
+
         font-weight: lighter;
         font-size: 40px;
     }
@@ -194,9 +190,7 @@
     .type-of-tea { /* Контейнер с видами чая */
         justify-content: center;
         flex-wrap: wrap;
-        width: 636px;
-        margin-top: 42px;
-        margin-bottom: 120px;
+        column-gap: 15px;
         font-size: 24px;
     }
     .img-type-of-tea { /* Изображения видов чая */
@@ -207,14 +201,12 @@
 /* Медиа для секции What our Clients say */
 @media (max-width: 768px) {
     .clients-feadback { /* Весь контейнер */
-        height: 596px;
-        justify-content: flex-start;
-        padding: 60px 0 0 5px;
-        margin-top: 0;
-        row-gap: 65px;
+        margin-top: 120px;
+        padding: 60px 0;
     }
     .all-comments {
-        width: 640px;
+        column-gap: 80px;
+        padding: 15px 0 0 65px;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: start;
@@ -227,14 +219,15 @@
     }
     #author {
         font-size: 20px;
+        padding-top: 3px;
     }
 }
 
 /* Медиа для секции чайного блога */
 @media (max-width: 768px) {
     .tea-blog {
-        padding-top: 125px;
-        gap: 0px;
+        padding-right: 0;
+        gap: 0;
     }
     .all-blog {
         padding: 60px 0 0 0;
@@ -251,7 +244,6 @@
         width: 270px;
     }
     .description {
-        width: 252px;
         margin-left: 20px;
     }
     .description h3 {
@@ -274,72 +266,62 @@
 /* Медиа для секции Want to know more? */
 @media (max-width: 768px) {
     .more-info { /* Весь контейнер */
-        height: 525px;
         flex-wrap: wrap;
-        justify-content: center;
         text-align: center;
-        padding: 0 20px 0 20px;
+        margin-top: 120px;
+        padding: 60px 20px 0 20px;
     }
     .left-box {
-        padding-top: 10px;
+        row-gap: 60px;
     }
     #par-in-left-box { /* Текст в левой части секции */
         width: 640px;
         font-size: 20px;
-        padding-top: 65px;
-    }
-    .right-box { /* Правая часть секции */
-        width: 580px;
-        margin-bottom: 45px;
     }
     #email { /* Поле ввода почты */
         width: 439px;
-    }
-    #par-in-right-box {
-        width: 560px;
-        font-size: 13px;
-        text-align: left;
+        margin: 85px 0 5px 0;
         padding-left: 20px;
     }
-    #label-in-email { /* placeholder в поле ввода почты */
-        top: 40px;
-        left: -70px;
+    #email::placeholder {
         font-size: 20px;
     }
     #input-button { /* Кнопка Join */
-        width: 116px;
-        height: 51px;
-
-        padding: 15px 40px;
-        margin: 20px 0 0 10px;
+        padding: 5px 40px;
+        margin: 60px 0 0 25px;
+        font-size: 20px;
+    }
+    #par-in-right-box {
+        width: 565px;
+        text-align: left;
+        padding: 0 0 0 12.5px;
+        font-size: 13px;
     }
     #checkbox { /* Чекбокс */
         width: 10px;
         height: 10px;
-        top: 86px;
-        left: 0px;
+        margin-top: 3px;
+    }
+    .right-box {
+        padding-bottom: 60px;
     }
 }
 
 /* Медиа для секции с приоритетами */
 @media (max-width: 768px) {
     .priority {
-        height: 489px;
-        margin: 20px 0 230px 0;
+        padding: 0;
     }
     #title-priority {
         font-size: 40px;
-        padding-bottom: 60px;
+        padding: 120px 0 60px 5px;
     }
     .four-priority {
         width: 638px;
         flex-wrap: wrap;
-        padding: 0;
-        column-gap: 80px;
-        row-gap: 30px;
-    }
-    .each-priority {
-        height: 178px;
+        justify-content: space-between;
+        row-gap: 50px;
+        padding-bottom: 130px;
     }
     .each-priority h4 {
         font-size: 30px;

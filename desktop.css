@@ -3,47 +3,46 @@
 
 /* Шапка сайта */
 header {
-    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 155px 0 150px;
+    padding: 24px 155px 24px 150px;
 
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 45px;
+    font-weight: 400;
     font-style: normal;
     font-size: 13.5px;
 }
-.menu {
+.menu { /* Бургер меню */
     display: none;
 }
-.logo {
+.logo { /* Контейнер логтипа */
     display: flex;
     align-items: center;
     padding-bottom: 25px;
 }
-.logoImage {
-    height: 78.75px;
+.logo img { /* Иконка логотипа */
+    width: 55px;
 }
-nav {
+nav { /* Меню */
     text-align: center;
-    padding-left: 55px;
 }
-.header-ul {
+.header-ul { /* Список меню */
     display: flex;
     justify-content: center;
-    gap: 53.5px;
+    gap: 42px;
+    padding-left: 60px;
 }
-.header-icon {
+.header-icon { /* Контейнер иконок справа */
     display: flex;
     gap: 15px;
 }
-.header-icon img {
+.header-icon img { /* Иконки */
     width: auto;
     height: 16.5px;
 }
-#searchIcon {
+#searchIcon { /* Иконка лупы */
     padding-left: 60px;
 }
 
@@ -53,10 +52,9 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: url(/images/Rectangle\ 75.png) no-repeat center left / cover;
-    padding: 190px 0 35px 150px;
-    gap: 15px;
-
+    padding: 190px 310px 35px 0px;
 }
 .tea-field:after { /* Фильтр для изображения на фоне */
     content: "";
@@ -70,11 +68,14 @@ nav {
 	background-image: linear-gradient(to top, #000000 15%, #ffffff00, #ffffff00);
 	opacity: 0.8;
 }
- #title-tea-field, #par-in-tea-field {
+.text-field { /* Контейнер с текстом */
+    display: flex;
+    flex-direction: column;
     width: 592px;
+    row-gap: 14px;
     z-index: 1;
 }
-#par-in-tea-field {
+#par-in-tea-field { /* Параграф */ 
     width: 418px;
     color: white;
 
@@ -94,9 +95,9 @@ nav {
     flex-direction: column;
 }
 #par-in-tea-collections { /* Цитата вверху секции */
-    margin-top: 112px;
-    width: 528px;
+    padding: 0 350px;
     text-align: center;
+    margin-top: 112px;
 
     font-family: "Cormorant", serif;
     font-optical-sizing: auto;
@@ -113,7 +114,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    width: 900px;
+    column-gap: 30px;
     margin-top: 47px;
 
     font-family: "Cormorant", serif;
@@ -129,23 +130,20 @@ nav {
 
 /* Секция What our Clients say */
 .clients-feadback { /* Весь контейнер */
-    height: 297.75px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 113px;
+    padding: 45px 0;
     background-color: #f7f2ea;
 }
-#title-what {
-    padding-left: 7px;
+#title-what { /* Заголовок секции */
+    padding: 0 0 45px 7px;
 }
 .all-comments { /* Контейнер с комментариями */
-    width: 900px;
-    height: 126.75px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 2px 1px 0;
+    column-gap: 20px;
 
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -173,16 +171,17 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 110px;
+    padding: 110px 40px 0 0;
     gap: 45px;
 }
 .all-blog { /* Контейнер с блогами */
-    max-width: 860px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 42px;
+    padding: 0 150px;
 }
 .each-blog { /* Настройки каждого блога */
     display: flex;
@@ -191,8 +190,7 @@ nav {
 .image-blog { /* Изображение блога */
     width: 202.5px;
 }
-.description { /* Весь текст справа от изображения блога */
-    width: 189px;
+.description { /* Весь текст справа от изображения блога */    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -201,7 +199,7 @@ nav {
 }
 .description p{ /* Указание автора блога */
     position: absolute;
-    top: 72px;
+    top: 75px;
 
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -219,7 +217,7 @@ nav {
     font-style: normal;
     font-size: 9.75px;
 }
-.link::after {
+.link::after { /* Стрелочка */
     display: inline-block;
     content: '';
     width: 3px;
@@ -245,24 +243,19 @@ nav {
 
 /* Секция Want to know more? */
 .more-info { /* Весь контейнер */
-    height: 313.5px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 113px;
-    padding: 0 125px;
+    padding: 75px 0;
+    column-gap: 30px;
+    background: url(/images/tea\ 1.png) no-repeat right;
     background-color: #F7F2EA;
-    background-image: url(/images/tea\ 1.png);
-    background-position: right;
-    background-repeat: no-repeat;
 }
 .left-box { /* Левая часть секции */
-    height: 165px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 8px;
+    row-gap: 35px;
 }
 #par-in-left-box { /* Текст в левой части секции */
     width: 435px;
@@ -275,43 +268,26 @@ nav {
     line-height: 1.5;
 }
 .right-box { /* Правая часть секции */
-    width: 435px;
-    height: 87.75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.inputbox { /* Контейнер поля ввода и кнопки */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-    position: relative;
 }
 #email { /* Поле ввода почты */
-    width: 329.25px;
+    width: 330px;
     height: 22.5px;
-    background: transparent;
+    padding-left: 7px;
+    margin: 15px 15px 0 0;
+    color: #B8B58B;
     border: none;
     outline: none;
-    font-size: 1rem;
-    margin-top: 50px;
-    margin-right: 14px;
-    margin-bottom: 10px;
-    color: #fff;
     border-bottom: 1px solid #B8B58B;
-    transform: translateX(-5.5px);
+    background: transparent;
 }
-#par-in-right-box { /* Текст справа от чекбокса */
-    width: 425px;
-    padding-left: 8px;
-
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: lighter;
-    font-style: normal;
-    font-size: 9.75px;
-}
-#label-in-email { /* placeholder в поле ввода почты */
-    position: absolute;
-    top: 50px;
-    right: 310px;
-
+#email::placeholder { /* placeholder в поле ввода почты */
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: lighter;
@@ -320,11 +296,10 @@ nav {
     color: #B8B58B;
 }
 #input-button { /* Кнопка Join */
-    width: 87px;
-    height: 38.25px;
     display: flex;
-    padding: 8px 30px;
-    margin: 35px 0 10px 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
     border: 1px solid #151618;
     background-color: white;
     
@@ -334,44 +309,51 @@ nav {
     font-style: normal;
     font-size: 15px;
 }
+.agreement { /* Контейнер с чекбоксом и текстом */
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+#par-in-right-box { /* Текст */
+    width: 425px;
+    padding: 0 0 2px 5px;
+    
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 9.75px;
+}
 #checkbox { /* Чекбокс */
     width: 7.5px;
     height: 7.5px;
-    position: absolute;
-    top: 86px;
-    right: 435px;
+    margin-top: 2px;
 }
 
 
 /* Секция с приоритетами */
 .priority { /* Весь контейнер */
-    height: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    padding: 0 140px;
 }
 #title-priority {
-    padding-top: 110px;
+    padding: 115px 0 45px 0;
 }
 .four-priority { /* Контейнер для всех приоритетов */
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 0 131px 113px 131px;
+    padding-bottom: 115px;
+    column-gap: 35px;
 }
 .each-priority { /* Каждый приоритет */
-    height: 133.5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-}
-.image-priority { /* Иконка приоритета */
-    width: 45px;
-    height: auto;
-    padding-top: 20px;
+    text-align: center;
+    row-gap: 7px;
 }
 #par-in-priority { /* Текст под заголовком */
     font-family: "Open Sans", sans-serif;
@@ -380,6 +362,10 @@ nav {
     font-style: normal;
     font-size: 15px;
     letter-spacing: -0.2px;
+}
+.image-priority { /* Иконка приоритета */
+    width: 45px;
+    padding-top: 20px;
 }
 
 
@@ -467,7 +453,7 @@ footer {
 }
 .quote-author p:last-child { /* Автор цитаты */
     width: 96.75px;
-    padding-top: 10px;
+    padding-top: 15px;
     font-style: normal;
     font-size: 9px;
 }
@@ -492,7 +478,7 @@ footer {
     grid-column: 4;
     grid-row: 2;
     width: 42.75px;
-    margin: 10px 0 0 5px;
+    margin: 12.5px 0 0 5px;
 }
 .number-mail { /* Контейнер номера и телефона (в макете значки перепутаны) */
     grid-column: 5;

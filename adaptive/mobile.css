@@ -15,26 +15,23 @@
 /* Медиа для шапки сайта (телефон)*/
 @media (max-width: 480px) {
     header {
-        height: 75px;
-        padding: 0 10px 0 0;
+        padding: 10px 10px 10px 0;
     }
-    .burger-menu {
-        padding-left: 10px;
-    }
-    .logoImage {
+    .logo img {
         width: 39px;
-        top: 10px;
-        left: 220px;
     }
 }
 
 /* Медиа для секции под шапкой (телефон)*/
 @media (max-width: 480px) {
     .tea-field {
-        padding: 275px 0 45px 10px;
+        padding: 275px 10px 50px 0;
+    }
+    .text-field {
+        width: 450px;
+        row-gap: 15px;
     }
     #title-tea-field {
-        width: 450px;
         font-size: 40px;
         line-height: 50px;
     }
@@ -46,7 +43,6 @@
 /* Медиа для секции с коллекцией чая (телефон) */
 @media (max-width: 480px) {
     #par-in-tea-collections { /* Цитата вверху секции */
-        width: 376px;
         font-family: "Open sans", serif;
         font-size: 16px;
         margin-top: 60px;
@@ -55,25 +51,24 @@
         margin: 60px 0 0 5px;
     }
     .type-of-tea { /* Контейнер с видами чая */
-        width: 416px;
         margin-top: 35px;
-        margin-bottom: 65px;
+        column-gap: 0px;
     }
+    /* margin: auto */
 }
 
 /* Медиа для секции What our Clients say (телефон) */
 @media (max-width: 480px) {
     .clients-feadback { /* Весь контейнер */
-        height: 588px;
+        margin-top: 65px;
         padding: 50px 0 0 0;
-        row-gap: 45px;
     }
     .all-comments {
-        width: 480px;
-        padding: 5px 10px 0 10px;
+        column-gap: 20px;
+        padding: 5px 10px 20px 10px;
     }
     .each-comment {
-        width: 220px;
+        width: 219px;
     }
 }
 
@@ -93,54 +88,57 @@
     .image-blog {
         width: 230px;
     }
+    .description p {
+        top: 90px;
+    }
 }
 
 /* Медиа для секции Want to know more? (телефон)*/
 @media (max-width: 480px) {
     .more-info { /* Весь контейнер */
-        height: 415px;
         margin-top: 55px;
+        padding: 50px 20px 0 20px;
         background-image: none;
     }
     .left-box {
-        padding-top: 40px;
+        row-gap: 30px;
     }
     #par-in-left-box { /* Текст в левой части секции */
         width: 460px;
         font-size: 13px;
-        padding-top: 25px;
-    }
-    .right-box { /* Правая часть секции */
-        width: 460px;
-        margin-bottom: 100px;
     }
     #email { /* Поле ввода почты */
         width: 324px;
-    }
-    #label-in-email { /* placeholder в поле ввода почты */
-        left: 15px;
+        margin: 55px 0 0 0;
     }
     #input-button { /* Кнопка Join */
-        padding: 15px 40px;
-        margin: 20px 0 0 5px;
+        padding: 10px 40px;
+        margin: 25px 0 0 20px;
         font-size: 20px;
+    }
+    #par-in-right-box {
+        width: 445px;
+        padding: 5px 0 0 10px;
+    }
+    #checkbox { /* Чекбокс */
+        margin-top: 5px;
+    }
+    .right-box { /* Правая часть секции */
+        padding-bottom: 50px;
     }
     
 }
 
 /* Медиа для секции с приоритетами (телефон) */
 @media (max-width: 480px) {
-    .priority {
-        height: 926px;
-        margin: 0px 0 120px 0;
-    }
     #title-priority {
-        padding: 60px 0 35px 0;
+        padding: 60px 0 30px 0;
     }
     .four-priority {
         width: 300px;
         flex-direction: column;
-        row-gap: 50px;
+        row-gap: 65px;
+        padding-bottom: 60px;
     }
 }
 
@@ -148,11 +146,11 @@
 @media (max-width: 480px) {
     footer {
         grid-template-columns: 230px 230px;
-        grid-template-rows: 43vh 16vh 11vh 16vh 4vh;
+        grid-template-rows: 48% 18% 12% 18% 4%;
         padding-top: 55px;
     }
     .footer-ul {
-        padding-top: 30px;
+        padding: 30px 0 0px 0;
     }
     .products {
         grid-row: 1;
@@ -167,6 +165,7 @@
         grid-row: 2;
         width: 460px;
         margin: 0;
+        padding: 0px 0 100px 0;
     }
     .quote-author p:last-child {
         width: 298px;
@@ -175,18 +174,19 @@
     #stay-in-touch {
         grid-column: 1 / span 2;
         grid-row: 3;
-        padding: 0px 0 0px 165px;
+        justify-self: center;
+        padding: 0;
     }
     #par-in-footer {
         grid-column: 1 / span 2;
         width: 460px;
         margin: 0;
-        padding-top: 45px;
+        padding: 50px 0 60px 0;
         text-align: center;
     }
     #footer-logo {
         grid-column: 1;
-        margin: 5px 0 0 20px;
+        margin: 10px 0 5px 20px;
     }
     .number-mail {
         grid-column: 1 / span 2;
