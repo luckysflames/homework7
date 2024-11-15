@@ -31,7 +31,7 @@ nav { /* Меню */
 .header-ul { /* Список меню */
     display: flex;
     justify-content: center;
-    gap: 42px;
+    gap: 55px;
     padding-left: 60px;
 }
 .header-icon { /* Контейнер иконок справа */
